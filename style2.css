@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+
+}
+h1, h2, h3 {
+    line-height: 1.1;
+}
+h2 {
+    font-size: 90%;
+    text-transform: uppercase;
+    
+}
+ header nav li {
+    display: inline-block;
+    background-color: white;
+    font-weight: 800;
+    margin-bottom: 1vh;
+    padding: 1vw;
+    width: 100%;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+a {
+    text-decoration: none;
+    color: rgb(2, 1, 1, 0.8);
+
+
+}
+#profilepic {
+    width: 60vw;
+    margin-top: 2vh;
+}
+body {
+    color: rgb(2, 1, 1, 0.9);
+    font: 300 100%/1.5 'Source Sans Pro', sans-serif;
+    text-align: center;
+    hyphens: auto;
+    background-color: rgba(222, 222, 224, 0.224);
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+header {
+    display: inline-block;
+    width: 90%;
+}
+main section {
+    background-color: white;
+    padding: 6vh 0;
+}
+main section p {
+    margin: 1em 12vw;
+    color: rgb(2, 1, 1, 0.8);
+}
+
+main section img {
+    width: 96vw;
+    padding: 1em;
+}
+footer {
+    display: inline-block;
+    width: 90%;
+
+}
+footer h2 { 
+    padding: 6vh 0 3vh;
+
+}
+.pianotext {
+    color: rgb(2, 1, 1, 0.5);
+
+}
+footer ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85vw;
+
+}
+strong {
+    margin-left: 2vw;
+
+}
+#dashline {
+    margin-top: 7vh;
+    border-top: 1px solid rgb(2, 1, 1, 0.1);
+    font-weight: bold;
+    color: rgb(2, 1, 1, 0.8);
+
+}
+h4 {
+    margin: 0;
+}
+footer nav {
+    display: inline-block;
+
+}
+footer li {
+    font-size: 90%;
+
+}
+.nope {
+    display: none;
+}
+/* -------------------------------------------------------------------------------------------- */
+    @media (min-width: 768px) {
+        /* header */
+        h1 {
+            margin: 3rem auto 1.5rem;
+            color: rgb(2, 1, 1, 0.8);
+        }
+        ul {
+            font-size: 90%;
+        }
+        header nav li {
+            display: inline;
+            margin: auto .5vw;
+            width: auto;
+            background: none;
+        
+        }
+        header {
+            margin-bottom: 6vh;
+        }
+        header .pianotext {
+            text-align: left;
+            letter-spacing: 1px;
+        }
+        #profilepic {
+            width: 33vw;
+            margin: 0 auto 0 .7rem;
+        }
+        header div {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        header nav ul {
+            margin-bottom: 6vh;
+        }
+        /* main */
+        h2 {
+           color: rgb(2, 1, 1, 0.8);
+           font-size: 95%;
+        }
+        #portfolio {
+            margin-bottom: 5vh;
+        }
+
+        main section img {
+            width: 97%;
+            padding: 3vh 0 1vh;
+        }
+        main section {
+            padding: 3vh 0 1vh;
+
+        }
+        main section p {
+            margin: 1em 5vw 3em;    
+            font-size: 90%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        article {
+            flex-basis: calc(50% - 20px);
+        }
+        h3 {
+          color: rgb(2, 1, 1, 0.6); 
+
+          /* Footer  */
+        }
+        h4 {
+            margin: 0;
+        }
+        #tabletdiff {
+            width: 100vw;
+        }
+        footer nav li a {
+            text-transform: uppercase;
+        }
+        #nope {
+            display: none;
+        }
+        .nope {
+            display: inline-block;
+        }
+        footer li {
+            display: flex;
+            flex-direction: row;    
+            margin: 0 2vw 3vh 0;
+            width: auto;
+        } 
+        footer .pianotext {
+            margin: auto 20vw;
+
+        }
+    }
+    /* --------------------------------------------- */
+@media (min-width:1024px) {
+    /* header */
+    h1 {
+        text-align: left;
+    }
+    header nav ul {
+        font-size: 100%;
+        text-align: right;
+    }
+    /* main */
+    h2 {
+        font-size: 100%;
+    }
+    .container {
+        margin: auto 1vw;
+    }
+    article {
+        padding: 5px;
+        flex-basis: calc(35% - 20px);
+    }
+    /* footer */
+    footer h2 {
+        padding: 4vh 0 3vh;
+    }
+    
+}
+
