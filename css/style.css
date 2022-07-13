@@ -11,6 +11,28 @@ body {
     max-width: 760px;
     
 }
+.addspace {
+    margin: 5px 5px 5px 0;
+}
+input {
+    margin: 0px;
+}
+/* DISPLAY */
+.inputinlineblock {
+    display: inline-block;
+}
+.inputblock {
+    display: block;
+}
+.labelinlineblock {
+    display: inline-block;
+}
+.labelblock {
+    display: block;
+}
+.optgroupblock {
+    display: block;
+}
 /* HEADER */
 header h1 {
     text-transform: uppercase;
@@ -28,7 +50,8 @@ header {
 header h2 {
     font-size: 112%;
 }
-header p {
+.headerp {
+    color:rgba(8, 0, 57, 0.336);
     font-size: 80%;
     margin: 0 4px;
 }
@@ -40,8 +63,13 @@ main {
 }
 fieldset {
     border: 0;
+    padding: 0;
+    margin: 0;
 }
 /* FOOTER */
-footer p {
+.footerp {
+    color:rgba(8, 0, 57, 0.336);
     text-transform: capitalize;
+    text-align: center;
+    font-size: 88%;
 }
