@@ -58,13 +58,17 @@ header h2 {
 /* MAIN */
 main {
     margin-top: 3px;
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(8, 0, 57);
     display: inline-block;
 }
 fieldset {
     border: 0;
     padding: 0;
     margin: 0;
+}
+.borderabovenewsletter {
+    border-bottom: 2px solid rgb(8, 0, 57);
+    padding-bottom: 30px;
 }
 /* FOOTER */
 .footerp {
