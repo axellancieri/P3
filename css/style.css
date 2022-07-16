@@ -97,6 +97,8 @@ select:focus {
 .zipwidth {
     width: 150px;
 }
+/* Following bit was checked from over the following site as I was having a hard time trying to do what I wanted for my placer holder with the taught material to behave and look as I would expect it to do on a real wewbsite scenario
+ "https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html" */
 select:required:invalid {
     color: #666;
 }
