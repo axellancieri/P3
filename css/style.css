@@ -14,19 +14,6 @@ body {
 .addspace {
     margin: 5px 5px 5px 0;
 }
-input {
-    margin: 0px;
-}
-/* DISPLAY */
-.labelinlineblock {
-    display: inline-block;
-}
-.labelblock {
-    display: block;
-}
-.optgroupblock {
-    display: block;
-}
 /* HEADER */
 header h1 {
     text-transform: uppercase;
@@ -61,7 +48,7 @@ fieldset {
     margin: 0;
 }
 .inputcontactinfo {
-    display: block;
+    display: block ;
 }
 .labelcontactinfo {
     display: block;
@@ -76,6 +63,34 @@ fieldset {
     border-bottom: 2px solid rgb(8, 0, 57);
     padding-bottom: 30px;
 }
+.newsletterlabeltitle {
+    display: block;
+}
+input:focus,
+textarea:focus,
+input:target,
+textarea:target,
+input:hover,
+textarea:hover,
+select:target,
+select:hover,
+select:focus {
+    outline: none;
+    border: 2px inset rgba(30, 10, 110, 0.731);
+}
+.inputsizeandcolor {
+    width: 270px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: rgb(230, 230, 230);
+    border:none;
+    border-radius: 3%;
+    padding: 0;
+}
+.zipwidth {
+    width: 150px;
+}
+
 /* FOOTER */
 .footerp {
     color:rgba(8, 0, 57, 0.336);
