@@ -3,17 +3,17 @@
 
 }
 body {
-    color: rgb(8, 0, 57);
+    color: rgba(8, 0, 57, 0.633);
     background-color: rgb(246, 246, 245);
-    font: 300 100%/1.5 'Merriweather', serif;;
+    font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
     margin: 0 15px;
     max-width: 760px;
     
 }
-.greyletter {
-    color: rgba(8, 0, 57, 0.336);
-}   
+h2 {
+    color: rgba(8, 0, 57, 0.866);
+}
 input::placeholder {
     padding-left: 180px;
 }
@@ -32,11 +32,13 @@ header {
     text-align: center;
 }
 header h2 {
-    font-size: 112%;
+    font-size: 116%;
+    margin-bottom: 5px;
 }
 .headerp {
-    color:rgba(8, 0, 57, 0.336);
+    color:rgba(8, 0, 57, 0.423);
     font-size: 80%;
+    font-weight: bold;
     margin: 0 4px;
 }
 /* MAIN */
@@ -104,10 +106,12 @@ select:focus {
     width: 150px;
 }
 .textarea {
-    margin-top: 0px;
+    margin: 0 auto 20px;
     height: 90px;
+    
 }
 .btn {
+    cursor: pointer;
     height: 40px;
     width: 270px;
     padding: 0;
@@ -119,6 +123,11 @@ select:focus {
     border: none;
     border-radius: 3%;
 }
+.btn:hover,
+.btn:target,
+.btn:focus {
+    opacity: .75;
+  }
 /* Following bit was checked from over the following site as I was having a hard time trying to do what I wanted for my placer holder with the taught material to behave and look as I would expect it to do on a real wewbsite scenario
  "https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html" */
 select:required:invalid {
@@ -132,8 +141,12 @@ select:required:invalid {
 }
 /* FOOTER */
 .footerp {
-    color:rgba(8, 0, 57, 0.336);
+    color:rgba(8, 0, 57, 0.423);
     text-transform: capitalize;
     text-align: center;
     font-size: 88%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 40px auto;
+    padding-bottom: 150px;
 }
