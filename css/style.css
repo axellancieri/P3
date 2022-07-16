@@ -14,6 +14,9 @@ body {
 .addspace {
     margin: 5px 5px 5px 0;
 }
+.greyletter {
+    color: rgba(8, 0, 57, 0.336);
+}   
 /* HEADER */
 header h1 {
     text-transform: uppercase;
@@ -41,6 +44,10 @@ main {
     margin-top: 3px;
     border-top: 2px solid rgb(8, 0, 57);
     display: inline-block;
+}
+input,
+select:required:valid {
+    color: rgba(0, 2, 57, 0.643);
 }
 fieldset {
     border: 0;
@@ -90,7 +97,15 @@ select:focus {
 .zipwidth {
     width: 150px;
 }
-
+select:required:invalid {
+    color: #666;
+}
+  option[value=""][disabled] {
+    display: none;
+}
+  option {
+    color: rgba(0, 2, 57, 0.643);
+}
 /* FOOTER */
 .footerp {
     color:rgba(8, 0, 57, 0.336);

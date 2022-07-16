@@ -24,10 +24,10 @@
                                 <legend><h2>Contact Information</h2></legend>
 
                                         <label class="labelcontactinfo" for="name" >Full Name</label>
-                                        <input type="text" class="inputcontactinfo inputsizeandcolor" id="name" name="user_name">
+                                        <input type="text" class="inputcontactinfo inputsizeandcolor" id="name" name="user_name" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="email">Email Address</label>
-                                        <input type="email" class="inputcontactinfo inputsizeandcolor" id="email" name="user_email">
+                                        <input type="email" class="inputcontactinfo inputsizeandcolor" id="email" name="user_email" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="phone">Phone Number</label>
                                         <input type="tel" class="inputcontactinfo inputsizeandcolor" id="phone" name="user_phone">
@@ -39,12 +39,11 @@
                                         <input type="text" class="inputcontactinfo inputsizeandcolor" id="city" name="user_city">
 
                                         <label class="labelcontactinfo" for="state"> State</label>
-                                        <select id="state" name="user_state" class="inputsizeandcolor">
-                                                <optgroup label="State" class="optgroupblock" placeholder="Choose State">
-                                                        <option value="wonderland_state" class="inputsizeandcolor">Wonderland</option>
+                                        <select required id="state" name="user_state" class="inputsizeandcolor" placeholder="asdasdasdad">
+                                                        <option  value="" disabled selected>Choose State</option>
+                                                        <option value="wonderland_state">Wonderland</option>
                                                         <option value="iglu_state">Iglu</option>
                                                         <option value="coconut_state">Coconut</option>
-                                                </optgroup>
                                         </select><br>
 
                                         <label class="labelcontactinfo" for="zipcode" name="user_zipcode">Zip Code</label>
