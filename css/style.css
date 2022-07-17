@@ -185,8 +185,8 @@ select:required:invalid {
     }
     .zipwidth {
         margin: 10px auto 10px 0;
-        width: 468px;
-        flex-basis: calc(80% - 195px);
+        width: 83px;
+        flex-basis: auto;
     }
     .labelzipcodedesktop {
         flex-basis: calc(16% - -57px);
