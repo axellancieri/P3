@@ -164,8 +164,31 @@ select:required:invalid {
     .labelcontactinfo {
         display: inline-block;
         margin-right: 40px;
+        flex-basis: calc(20% - -11px);
+        padding-top: 20px;
+        width: 468px;
+        margin: 0;
     }
     .inputcontactinfo {
         display: inline-block;
+        flex-basis: calc(100% - 133px);
+        margin: 10px 0 10px auto;
+    }
+    .desktopversion {
+        display: flex;
+        flex-wrap: wrap
+    }
+    .inputsizeandcolor {
+        margin: 10px 0 10px auto;
+        width: 468px;
+        flex-basis: calc(100% - 133px);
+    }
+    .zipwidth {
+        margin: 10px auto 10px 0;
+        width: 468px;
+        flex-basis: calc(80% - 195px);
+    }
+    .labelzipcodedesktop {
+        flex-basis: calc(16% - -57px);
     }
 }
