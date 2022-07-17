@@ -191,4 +191,12 @@ select:required:invalid {
     .labelzipcodedesktop {
         flex-basis: calc(16% - -57px);
     }
+    input::placeholder {
+        padding-left: 250px;
+    }
+/* FOOTER */
+    .btn {
+        width: 468px;
+    }
+
 }
