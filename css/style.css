@@ -7,8 +7,8 @@ body {
     background-color: rgb(246, 246, 245);
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
-    margin: 0 15px;
-    max-width: 270px;
+    margin: 0;
+    max-width: 300px;
     
 }
 h2 {
@@ -30,6 +30,7 @@ header {
     border-bottom: 4px solid rgb(8, 0, 57);
     padding: 0 0 25px;
     text-align: center;
+    margin: auto 15px;
 }
 header h2 {
     font-size: 116%;
@@ -46,6 +47,7 @@ main {
     margin-top: 3px;
     border-top: 2px solid rgb(8, 0, 57);
     display: inline-block;
+    margin: 3px 15px 0;
 }
 input,
 select:required:valid {
@@ -147,20 +149,34 @@ select:required:invalid {
     font-size: 88%;
     font-weight: bold;
     font-style: italic;
-    margin: 40px auto;
+    margin: 40px 15px;
     padding-bottom: 150px;
 }
 /* MEDIA QUERIES FOR TABLET */
 @media (min-width: 768px) {
     body {
-        margin: 0 150px;
+        margin: 0;
         max-width: 768px;
     }
     /* HEADER */
-    header h1 {
-        margin: 0 -150px;
+    header {
+        margin: 0 auto;
+        border: none;
+        padding: 0;
+    }
+    header h2 {
+        margin: 22px 150px 4px;
     }   
+    .headerp {
+        margin: auto 150px 3px;
+        border-bottom: 4px solid rgb(8, 0, 57);
+        padding: 0 0 25px;
+
+    }
 /* MAIN     */
+    main {
+        margin: auto 150px;
+    }
     .labelcontactinfo {
         display: inline-block;
         margin-right: 40px;
@@ -194,9 +210,14 @@ select:required:invalid {
     input::placeholder {
         padding-left: 250px;
     }
-/* FOOTER */
     .btn {
+        margin-top: 10px;
         width: 468px;
     }
+/* FOOTER */
 
+    .footerp {
+        margin: 40px 150px;
+    }
+    
 }
