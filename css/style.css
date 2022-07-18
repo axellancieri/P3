@@ -7,47 +7,46 @@ body {
     background-color: rgb(246, 246, 245);
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
-    margin: 0;
-    max-width: 300px;
+    width: 100%;
     
 }
-h2 {
+h2, .legendtitle {
     color: rgba(8, 0, 57, 0.866);
 }
 input::placeholder {
-    padding-left: 180px;
+    /* padding-left: 180px; */
 }
 /* HEADER */
-header h1 {
+.title {
     text-transform: uppercase;
     font-size: 130%;
     color: rgb(246, 246, 245);
-    margin: 0 -15px;
-    padding: 1em;
+    margin: 0;
+    padding: 20px;
     background-color: rgb(8, 0, 57);
-}
-header {
-    border-bottom: 4px solid rgb(8, 0, 57);
-    padding: 0 0 25px;
     text-align: center;
-    margin: auto 15px;
 }
 header h2 {
     font-size: 116%;
-    margin-bottom: 5px;
 }
 .headerp {
     color:rgba(8, 0, 57, 0.423);
     font-size: 80%;
     font-weight: bold;
-    margin: 0 4px;
 }
 /* MAIN */
 main {
-    margin-top: 3px;
-    border-top: 2px solid rgb(8, 0, 57);
-    display: inline-block;
-    margin: 3px 15px 0;
+    padding: 15px;
+    width: 100%;
+}
+.legendtitle {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 input,
 select:required:valid {
@@ -57,6 +56,8 @@ fieldset {
     border: 0;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 input:focus,
 textarea:focus,
@@ -75,12 +76,11 @@ select:focus {
 }
 .labelcontactinfo {
     display: block;
-    margin-right: 150px;
 }
-.borderabovenewsletter {
+/* .borderabovenewsletter {
     border-bottom: 2px solid rgb(8, 0, 57);
     padding-bottom: 30px;
-}
+} */
 .newsletterlabeltitle {
     display: block;
     margin: 15px auto;
@@ -90,34 +90,32 @@ select:focus {
 }
 .labelnewslettercheckbox {
     display: inline-block;
-    margin: 5px auto;
+    /* margin: 5px auto; */
 }
 .newslettermarginbottom {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 .inputsizeandcolor {
-    width: 270px;
-    height: 40px;
-    margin: 10px auto;
+    width: 100%;
+    padding: 1rem;
     background-color: rgb(230, 230, 230);
     border:none;
     border-radius: 3%;
-    padding: 0 0 0 10px;
 }
 .zipwidth {
-    width: 150px;
+    /* width: 150px; */
 }
 .textarea {
-    margin: 0 auto 20px;
+    /* margin: 0 auto 20px; */
     height: 90px;
     
 }
 .btn {
     cursor: pointer;
     height: 40px;
-    width: 270px;
-    padding: 0;
-    margin: 0;
+    /* width: 270px; */
+    /* padding: 0;
+    margin: 0; */
     font-size: 110%;
     color: rgba(255, 255, 255, 0.918);
     background-color: rgb(4, 128, 121);
@@ -149,8 +147,8 @@ select:required:invalid {
     font-size: 88%;
     font-weight: bold;
     font-style: italic;
-    margin: 40px 15px;
-    padding-bottom: 150px;
+    /* margin: 40px 15px; */
+    /* padding-bottom: 150px; */
 }
 /* MEDIA QUERIES FOR TABLET */
 @media (min-width: 768px) {
@@ -211,8 +209,8 @@ select:required:invalid {
         padding-left: 250px;
     }
     .btn {
-        margin-top: 10px;
-        width: 468px;
+        /* margin-top: 10px; */
+        /* width: 468px; */
     }
 /* FOOTER */
 
@@ -221,3 +219,6 @@ select:required:invalid {
     }
     
 }
+
+/* padding es el espacio en relacion del padre a los hijos
+margin para separar entre hermanos entre la misma jerearquia */
