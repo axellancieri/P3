@@ -8,6 +8,7 @@ body {
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
     width: 100%;
+    margin: 0px;
     
 }
 h2, .legendtitle {
@@ -26,18 +27,29 @@ input::placeholder {
     background-color: rgb(8, 0, 57);
     text-align: center;
 }
-header h2 {
-    font-size: 116%;
-}
-.headerp {
-    color:rgba(8, 0, 57, 0.423);
-    font-size: 80%;
-    font-weight: bold;
-}
+
 /* MAIN */
 main {
     padding: 15px;
     width: 100%;
+}
+.h2centering {
+    font-size: 116%;
+    text-align: center;
+    margin: 4px 0 3px;
+}
+.mainp {
+    color:rgba(8, 0, 57, 0.423);
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    margin: 1px 0 2.6px;
+    border-bottom: 3px solid rgb(8, 0, 57);
+    padding-bottom: 23px;
+}
+.doublebordertop {
+    border-bottom: 2px solid rgb(8, 0, 57);
+    margin-bottom: 21px;
 }
 .legendtitle {
     display: block;
@@ -90,10 +102,6 @@ select:focus {
 }
 .labelnewslettercheckbox {
     display: inline-block;
-    /* margin: 5px auto; */
-}
-.newslettermarginbottom {
-    /* margin-bottom: 0px; */
 }
 .inputsizeandcolor {
     width: 100%;
