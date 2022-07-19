@@ -3,7 +3,7 @@
 
 }
 body {
-    color: rgba(13, 3, 81, 0.476);
+    color: rgba(13, 3, 81, 0.713);
     background-color: rgb(246, 246, 245);
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
@@ -118,7 +118,7 @@ fieldset {
     background-color: rgba(128, 128, 128, 0.148);
     color: rgba(12, 4, 77, 0.814);
     font: 300 100%/1.5 'Merriweather', serif;
-    transition: height 1s;
+    transition: height 0.3s;
 }
 .inputsizeandcolor:target,
 .inputsizeandcolor:focus,
@@ -130,12 +130,12 @@ textarea:focus {
 .inputsizeandcolor:target,
 .inputsizeandcolor:focus {
     transition-timing-function: linear;
-    width: 68%;
+    width: 98%;
 }
 textarea:target,
 textarea:focus {
     transition-timing-function: linear;
-    height: 15vh;
+    height: 12vh;
 }
 .zipwidth:target,
 .zipwidth:focus {
@@ -161,7 +161,7 @@ textarea:focus {
 /* Following bit was checked from over the following site as I was having a hard time trying to do what I wanted for my placer holder with the taught material to behave and look as I would expect it to do on a real wewbsite scenario
  "https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html" */
 select:required:invalid {
-    color: #666;
+    color:rgba(102, 102, 102, 0.437)
 }
   option[value=""][disabled] {
     display: none;
@@ -185,6 +185,7 @@ footer {
 @media (min-width: 768px) {
     body {
         margin: 0;
+        color: rgba(13, 3, 81, 0.713);
     }
 /* HEADER */
     .title {
@@ -214,6 +215,7 @@ footer {
     .labelcontactinfo {
         padding: 1rem 1rem 1rem 0;
         width: 30%;
+        font-weight: bold;
     }
     .inputsizeandcolor {
         width: 70%;
@@ -236,10 +238,6 @@ footer {
     .topbordernewsletter {
         padding-top: 40px;
     }
-    .btn {
-        /* margin-top: 10px; */
-        /* width: 468px; */
-    }
 /* FOOTER */
 
     .footerp {
@@ -248,6 +246,3 @@ footer {
     }
     
 }
-
-/* padding es el espacio en relacion del padre a los hijos
-margin para separar entre hermanos entre la misma jerearquia */
