@@ -3,7 +3,7 @@
 
 }
 body {
-    color: rgba(8, 0, 57, 0.633);
+    color: rgba(13, 3, 81, 0.476);
     background-color: rgb(246, 246, 245);
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
@@ -12,9 +12,6 @@ body {
 }
 h2, .legendtitle {
     color: rgba(8, 0, 57, 0.866);
-}
-input::placeholder {
-    /* padding-left: 180px; */
 }
 /* HEADER */
 .title {
@@ -47,13 +44,39 @@ main {
 }
 .doublebordertop {
     border-bottom: 2px solid rgb(8, 0, 57);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .legendtitle {
     display: block;
     font-size: 1.5em;
-    padding: 0;
     font-weight: bold;
+    width: 100%;
+    background-color: rgb(246, 246, 245);
+    padding: 0;
+}
+.inputsizeandcolor {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0.8rem;
+    background-color: rgb(230, 230, 230);
+    border:none;
+    border-radius: 5px;
+}
+input::placeholder, textarea::placeholder {
+    color:rgba(102, 102, 102, 0.437)
+}
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 80%;
+}
+.zipwidth {
+    width: 50%;
+    margin-bottom: 30px
+}
+.topbordernewsletter {
+    border-top: 2px solid rgb(8, 0, 57);
+    padding: 20px 0 0;
+    width: 100%;
 }
 input,
 select:required:valid {
@@ -67,39 +90,33 @@ fieldset {
 .fieldset1 {
     display: flex;
     flex-direction: column;
+    background: rgba(46, 0, 253, 0.024);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
-/* .borderabovenewsletter {
-    border-bottom: 2px solid rgb(8, 0, 57);
-    padding-bottom: 30px;
-} */
 .labelcontactinfo {
-    margin: 1rem 1rem 0.5rem 0;
+    margin: 1rem 0 0.5rem;
+    width: 40%;
 }
 .newsletterlabeltitle {
-    margin: 1rem 1rem 0.5rem 0;
+    margin: 1rem 1rem 0 3px;
     display: block;
 }
-.labelnewslettercheckbox {
-    display: inline-block;
-}
-.inputnewslettercheckbox {
-    margin: 1rem 1rem 0.5rem 0;
-}
-.inputsizeandcolor {
-    width: 100%;
-    padding: 1rem 1rem 1rem 0.8rem;
-    background-color: rgb(230, 230, 230);
-    border:none;
-    border-radius: 3%;
-}
-.zipwidth {
-    width: 50%;
+.newslettercontent {
+    margin: 0.5rem 0;
 }
 .textarea {
-    height: 90px; 
-}
-.content {
-    padding: 1px;
+    height: 15vh;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem 1rem 1rem 0.8rem;
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.148);
+    color: rgba(12, 4, 77, 0.814);
+    font: 300 100%/1.5 'Merriweather', serif;
 }
 input:focus,
 textarea:focus,
@@ -109,19 +126,22 @@ input:hover,
 textarea:hover,
 select:target,
 select:hover,
-select:focus {
+select:focus,
+textarea:target,
+textarea:focus {
     outline: none;
-    border: 2px inset rgba(30, 10, 110, 0.731);
+    border: 2px inset rgba(30, 10, 110, 0.464);
 }
 .btn {
     cursor: pointer;
-    height: 40px;
-    font-size: 110%;
+    height: 60px;
     color: rgba(255, 255, 255, 0.918);
-    background-color: rgb(4, 128, 121);
+    background-color: rgba(0, 171, 160, 0.749);
     outline: none;
     border: none;
-    border-radius: 3%;
+    border-radius: 5px;
+    width: 100%;
+    font: 800 140%/1.5 'Merriweather', serif;
 }
 .btn:hover,
 .btn:target,
@@ -141,7 +161,7 @@ select:required:invalid {
 }
 /* FOOTER */
 footer {
-    padding: 15px;
+    padding: 15px 15px 150px;
 }
 .footerp {
     color:rgba(8, 0, 57, 0.423);

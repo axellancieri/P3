@@ -26,19 +26,19 @@
                                 <legend class="legendtitle">Contact Information</legend>
 
                                         <label class="labelcontactinfo" for="name" >Full Name</label>
-                                        <input type="text" class="inputcontactinfo inputsizeandcolor" id="name" name="user_name" placeholder="Required">
+                                        <input required type="text" class="inputcontactinfo inputsizeandcolor" id="name" name="user_name" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="email">Email Address</label>
-                                        <input type="email" class="inputcontactinfo inputsizeandcolor" id="email" name="user_email" placeholder="Required">
+                                        <input required type="email" class="inputcontactinfo inputsizeandcolor" id="email" name="user_email" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="phone">Phone Number</label>
-                                        <input type="tel" class="inputcontactinfo inputsizeandcolor" id="phone" name="user_phone">
+                                        <input required type="tel" class="inputcontactinfo inputsizeandcolor" id="phone" name="user_phone" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="street">Street Address</label>
-                                        <input type="text" class="inputcontactinfo inputsizeandcolor" id="street" name="user_street">
+                                        <input required type="text" class="inputcontactinfo inputsizeandcolor" id="street" name="user_street" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="city">City</label>
-                                        <input type="text" class="inputcontactinfo inputsizeandcolor" id="city" name="user_city">
+                                        <input required type="text" class="inputcontactinfo inputsizeandcolor" id="city" name="user_city" placeholder="Required">
 
                                         <label class="labelcontactinfo" for="state"> State</label>
                                         <select required id="state" name="user_state" class="inputsizeandcolor">
@@ -49,34 +49,38 @@
                                         </select>
 
                                         <label class="labelcontactinfo labelzipcodedesktop" for="zipcode">Zip Code</label>
-                                        <input type="text" id="zipcode" name="user_zipcode" class="inputsizeandcolor zipwidth">
+                                        <input required type="text" id="zipcode" name="user_zipcode" class="inputsizeandcolor zipwidth" placeholder="Required">
                         </fieldset>
                         <fieldset class="fieldsetnews">
-                                <legend class="legendtitle newslettermarginbottom">Newsletter</legend>   
+                                <legend class="legendtitle topbordernewsletter">Newsletter</legend>   
 
                                         <label class="newsletterlabeltitle">Select the newsletter you would like to receive</label>
-                                                <div class="content">
-                                                        <input type="checkbox" id="htmlnews" class="inputnewslettercheckbox" value="news_html" name="user_newsletter_choice">
-                                                        <label for="htmlnews" class="labelnewslettercheckbox">HTML News</label>
+                                                <div class="newslettercontent">
+                                                        <input checked type="checkbox" id="htmlnews" value="news_html" name="user_newsletter_choice">
+                                                        <label  for="htmlnews">HTML News</label>
                                                 </div>
-                                                        <input type="checkbox" id="cssnews" class="inputnewslettercheckbox" value="news_css" name="user_newsletter_choice">
-                                                        <label for="cssnews" class="labelnewslettercheckbox">CSS News</label>
-                                                <div class="content">
-                                                        <input type="checkbox" id="javascriptnews" class="inputnewslettercheckbox" value="news_javascript" name="user_newsletter_choice">
-                                                        <label for="javascriptnews" class="labelnewslettercheckbox">Javascript News</label>
+                                                <div class="newslettercontent">
+                                                        <input type="checkbox" id="cssnews" value="news_css" name="user_newsletter_choice">
+                                                        <label for="cssnews">CSS News</label>
+                                                </div>
+                                                <div class="newslettercontent">
+                                                        <input type="checkbox" id="javascriptnews" value="news_javascript" name="user_newsletter_choice">
+                                                        <label for="javascriptnews">Javascript News</label>
                                                 </div>
                                                 
                                         <label class="newsletterlabeltitle">Newsletter format</label>
-                                                <div class="content">
-                                                        <input type="radio" class="inputnewslettercheckbox" id="html" value="html" name="user_format">
-                                                        <label class="labelnewslettercheckbox" for="html">HTML</label>
+                                                <div class="newslettercontent">
+                                                        <input type="radio" id="html" value="html" name="user_format">
+                                                        <label for="html">HTML</label>
                                                 </div>
-                                                <div class="content">
-                                                        <input type="radio" class="inputnewslettercheckbox" id="plaintext" value="plaintext" name="user_format">
-                                                        <label class="labelnewslettercheckbox" for="plaintext">Plain text</label>
+                                                <div class="newslettercontent">
+                                                        <input required type="radio" id="plaintext" value="plaintext" name="user_format">
+                                                        <label for="plaintext">Plain text</label>
                                                 </div>
-                                        <label for="othertopics" class="newsletterspacing">Other topics you'd like to hear about</label>
-                                                <textarea id="othertopics" name="user_othertopic" class="newsletterspacing textarea"></textarea>
+                                                <div class="newslettercontent">
+                                                        <label for="othertopics" class="newsletterlabeltitle">Other topics you'd like to hear about</label>
+                                                        <textarea id="othertopics" name="user_othertopic" class="textarea" placeholder="You can type here.."></textarea>
+                                                </div>
                         </fieldset>
                         <button type="submit" class="btn">Sign Up</button>      
                 </form>
