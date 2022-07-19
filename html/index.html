@@ -22,7 +22,7 @@
                          <p class="mainp">Get the latest news on how your code is doing right in your inbox</p>
                 </div>
                 <form action="index.html" method="post">
-                        <fieldset class="borderabovenewsletter bordertopfieldset         desktopversion">
+                        <fieldset class="fieldset1 desktopversion">
                                 <legend class="legendtitle">Contact Information</legend>
 
                                         <label class="labelcontactinfo" for="name" >Full Name</label>
@@ -46,34 +46,37 @@
                                                         <option value="wonderland_state">Wonderland</option>
                                                         <option value="iglu_state">Iglu</option>
                                                         <option value="coconut_state">Coconut</option>
-                                        </select><br>
+                                        </select>
 
                                         <label class="labelcontactinfo labelzipcodedesktop" for="zipcode">Zip Code</label>
                                         <input type="text" id="zipcode" name="user_zipcode" class="inputsizeandcolor zipwidth">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="fieldsetnews">
                                 <legend class="legendtitle newslettermarginbottom">Newsletter</legend>   
 
                                         <label class="newsletterlabeltitle">Select the newsletter you would like to receive</label>
-
-                                                <input type="checkbox" id="htmlnews" class="inputnewslettercheckbox" value="news_html" name="user_newsletter_choice">
-                                                 <label for="htmlnews" class="labelnewslettercheckbox">HTML News</label><br>
-
-                                                <input type="checkbox" id="cssnews" class="inputnewslettercheckbox" value="news_css" name="user_newsletter_choice">
-                                                 <label for="cssnews" class="labelnewslettercheckbox">CSS News</label><br>
-
-                                                <input type="checkbox" id="javascriptnews" class="inputnewslettercheckbox" value="news_javascript" name="user_newsletter_choice">
-                                                 <label for="javascriptnews" class="labelnewslettercheckbox">Javascript News</label>
-
+                                                <div class="content">
+                                                        <input type="checkbox" id="htmlnews" class="inputnewslettercheckbox" value="news_html" name="user_newsletter_choice">
+                                                        <label for="htmlnews" class="labelnewslettercheckbox">HTML News</label>
+                                                </div>
+                                                        <input type="checkbox" id="cssnews" class="inputnewslettercheckbox" value="news_css" name="user_newsletter_choice">
+                                                        <label for="cssnews" class="labelnewslettercheckbox">CSS News</label>
+                                                <div class="content">
+                                                        <input type="checkbox" id="javascriptnews" class="inputnewslettercheckbox" value="news_javascript" name="user_newsletter_choice">
+                                                        <label for="javascriptnews" class="labelnewslettercheckbox">Javascript News</label>
+                                                </div>
+                                                
                                         <label class="newsletterlabeltitle">Newsletter format</label>
-                                                <input type="radio" class="inputnewslettercheckbox" id="html" value="html" name="user_format">
-                                                 <label class="labelnewslettercheckbox" for="html">HTML</label><br>
-
-                                                <input type="radio" class="inputnewslettercheckbox" id="plaintext" value="plaintext" name="user_format">
-                                                 <label class="labelnewslettercheckbox" for="plaintext">Plain text</label><br>
-
-                                        <label for="othertopics" class="newsletterlabeltitle">Other topics you'd like to hear about</label>
-                                                <textarea id="othertopics" name="user_othertopic" class="inputsizeandcolor textarea"></textarea>
+                                                <div class="content">
+                                                        <input type="radio" class="inputnewslettercheckbox" id="html" value="html" name="user_format">
+                                                        <label class="labelnewslettercheckbox" for="html">HTML</label>
+                                                </div>
+                                                <div class="content">
+                                                        <input type="radio" class="inputnewslettercheckbox" id="plaintext" value="plaintext" name="user_format">
+                                                        <label class="labelnewslettercheckbox" for="plaintext">Plain text</label>
+                                                </div>
+                                        <label for="othertopics" class="newsletterspacing">Other topics you'd like to hear about</label>
+                                                <textarea id="othertopics" name="user_othertopic" class="newsletterspacing textarea"></textarea>
                         </fieldset>
                         <button type="submit" class="btn">Sign Up</button>      
                 </form>

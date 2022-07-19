@@ -7,7 +7,6 @@ body {
     background-color: rgb(246, 246, 245);
     font: 300 80%/1.5 'Merriweather', serif;;
     height: 100vh;
-    width: 100%;
     margin: 0px;
     
 }
@@ -31,7 +30,6 @@ input::placeholder {
 /* MAIN */
 main {
     padding: 15px;
-    width: 100%;
 }
 .h2centering {
     font-size: 116%;
@@ -49,15 +47,12 @@ main {
 }
 .doublebordertop {
     border-bottom: 2px solid rgb(8, 0, 57);
-    margin-bottom: 21px;
+    margin-bottom: 25px;
 }
 .legendtitle {
     display: block;
     font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    padding: 0;
     font-weight: bold;
 }
 input,
@@ -68,8 +63,43 @@ fieldset {
     border: 0;
     padding: 0;
     margin: 0;
+}
+.fieldset1 {
     display: flex;
     flex-direction: column;
+}
+/* .borderabovenewsletter {
+    border-bottom: 2px solid rgb(8, 0, 57);
+    padding-bottom: 30px;
+} */
+.labelcontactinfo {
+    margin: 1rem 1rem 0.5rem 0;
+}
+.newsletterlabeltitle {
+    margin: 1rem 1rem 0.5rem 0;
+    display: block;
+}
+.labelnewslettercheckbox {
+    display: inline-block;
+}
+.inputnewslettercheckbox {
+    margin: 1rem 1rem 0.5rem 0;
+}
+.inputsizeandcolor {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0.8rem;
+    background-color: rgb(230, 230, 230);
+    border:none;
+    border-radius: 3%;
+}
+.zipwidth {
+    width: 50%;
+}
+.textarea {
+    height: 90px; 
+}
+.content {
+    padding: 1px;
 }
 input:focus,
 textarea:focus,
@@ -83,47 +113,9 @@ select:focus {
     outline: none;
     border: 2px inset rgba(30, 10, 110, 0.731);
 }
-.inputcontactinfo {
-    display: block ;
-}
-.labelcontactinfo {
-    display: block;
-}
-/* .borderabovenewsletter {
-    border-bottom: 2px solid rgb(8, 0, 57);
-    padding-bottom: 30px;
-} */
-.newsletterlabeltitle {
-    display: block;
-    margin: 15px auto;
-}
-.inputnewslettercheckbox {
-    display: inline-block;
-}
-.labelnewslettercheckbox {
-    display: inline-block;
-}
-.inputsizeandcolor {
-    width: 100%;
-    padding: 1rem;
-    background-color: rgb(230, 230, 230);
-    border:none;
-    border-radius: 3%;
-}
-.zipwidth {
-    /* width: 150px; */
-}
-.textarea {
-    /* margin: 0 auto 20px; */
-    height: 90px;
-    
-}
 .btn {
     cursor: pointer;
     height: 40px;
-    /* width: 270px; */
-    /* padding: 0;
-    margin: 0; */
     font-size: 110%;
     color: rgba(255, 255, 255, 0.918);
     background-color: rgb(4, 128, 121);
@@ -148,6 +140,9 @@ select:required:invalid {
     color: rgba(0, 2, 57, 0.643);
 }
 /* FOOTER */
+footer {
+    padding: 15px;
+}
 .footerp {
     color:rgba(8, 0, 57, 0.423);
     text-transform: capitalize;
@@ -155,8 +150,6 @@ select:required:invalid {
     font-size: 88%;
     font-weight: bold;
     font-style: italic;
-    /* margin: 40px 15px; */
-    /* padding-bottom: 150px; */
 }
 /* MEDIA QUERIES FOR TABLET */
 @media (min-width: 768px) {
