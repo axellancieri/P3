@@ -19,7 +19,7 @@ h2, .legendtitle {
     font-size: 130%;
     color: rgb(246, 246, 245);
     margin: 0;
-    padding: 20px;
+    padding: 1.3rem;
     background-color: rgb(8, 0, 57);
     text-align: center;
 }
@@ -54,13 +54,6 @@ main {
     background-color: rgb(246, 246, 245);
     padding: 0;
 }
-.inputsizeandcolor {
-    width: 100%;
-    padding: 1rem 1rem 1rem 0.8rem;
-    background-color: rgb(230, 230, 230);
-    border:none;
-    border-radius: 5px;
-}
 input::placeholder, textarea::placeholder {
     color:rgba(102, 102, 102, 0.437)
 }
@@ -68,10 +61,6 @@ input::placeholder {
     text-align: right;
     font-style: italic;
     font-size: 80%;
-}
-.zipwidth {
-    width: 50%;
-    margin-bottom: 30px
 }
 .topbordernewsletter {
     border-top: 2px solid rgb(8, 0, 57);
@@ -90,7 +79,7 @@ fieldset {
 .fieldset1 {
     display: flex;
     flex-direction: column;
-    background: rgba(46, 0, 253, 0.024);
+    background: rgba(0, 13, 255, 0.014);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -105,32 +94,53 @@ fieldset {
 .newslettercontent {
     margin: 0.5rem 0;
 }
+.inputsizeandcolor {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0.8rem;
+    background-color: rgb(230, 230, 230);
+    border: hidden;
+    border-radius: 5px;
+    transition: width .3s;
+}
+.zipwidth {
+    width: 50%;
+    margin-bottom: 30px
+}
 .textarea {
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     margin: 1rem auto;
     padding: 1rem 1rem 1rem 0.8rem;
     border-radius: 5px;
     overflow: auto;
     resize: none;
-    border: none;
+    border: hidden;
     background-color: rgba(128, 128, 128, 0.148);
     color: rgba(12, 4, 77, 0.814);
     font: 300 100%/1.5 'Merriweather', serif;
+    transition: height 1s;
 }
-input:focus,
-textarea:focus,
-input:target,
-textarea:target,
-input:hover,
-textarea:hover,
-select:target,
-select:hover,
-select:focus,
+.inputsizeandcolor:target,
+.inputsizeandcolor:focus,
 textarea:target,
 textarea:focus {
     outline: none;
     border: 2px inset rgba(30, 10, 110, 0.464);
+}
+.inputsizeandcolor:target,
+.inputsizeandcolor:focus {
+    transition-timing-function: linear;
+    width: 68%;
+}
+textarea:target,
+textarea:focus {
+    transition-timing-function: linear;
+    height: 15vh;
+}
+.zipwidth:target,
+.zipwidth:focus {
+    transition-timing-function: linear;
+    width: 48%
 }
 .btn {
     cursor: pointer;
@@ -175,59 +185,56 @@ footer {
 @media (min-width: 768px) {
     body {
         margin: 0;
-        max-width: 768px;
     }
-    /* HEADER */
-    header {
-        margin: 0 auto;
-        border: none;
-        padding: 0;
-    }
-    header h2 {
-        margin: 22px 150px 4px;
-    }   
-    .headerp {
-        margin: auto 150px 3px;
-        border-bottom: 4px solid rgb(8, 0, 57);
-        padding: 0 0 25px;
-
+/* HEADER */
+    .title {
+        padding: 0.9rem;  
     }
 /* MAIN     */
     main {
-        margin: auto 150px;
+        padding: 20px 100px;
+    }
+    .h2centering {
+        font-size: 152%;
+        margin-top: 2rem;
+    }
+    .mainp {
+    font-size: 90%;
+    padding-bottom: 32px;
+    margin: 1px 0 1.6px;
+    }
+    .doublebordertop {
+        margin-bottom: 35px;
+    }
+    .fieldset1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .labelcontactinfo {
-        display: inline-block;
-        margin-right: 40px;
-        flex-basis: calc(20% - -11px);
-        padding-top: 20px;
-        width: 468px;
-        margin: 0;
-    }
-    .inputcontactinfo {
-        display: inline-block;
-        flex-basis: calc(100% - 133px);
-        margin: 10px 0 10px auto;
-    }
-    .desktopversion {
-        display: flex;
-        flex-wrap: wrap
+        padding: 1rem 1rem 1rem 0;
+        width: 30%;
     }
     .inputsizeandcolor {
-        margin: 10px 0 10px auto;
-        width: 468px;
-        flex-basis: calc(100% - 133px);
+        width: 70%;
+        margin: 1rem 0;
+    }
+    .inputsizeandcolor:target,
+    .inputsizeandcolor:focus {
+        transition-timing-function: linear;
+        width: 68%;
     }
     .zipwidth {
-        margin: 10px auto 10px 0;
-        width: 83px;
-        flex-basis: auto;
+        width: 25%;
+        margin-bottom: 3rem;
     }
-    .labelzipcodedesktop {
-        flex-basis: calc(16% - -57px);
+    .zipwidth:target,
+    .zipwidth:focus {
+    transition-timing-function: linear;
+    width: 23%
     }
-    input::placeholder {
-        padding-left: 250px;
+    .topbordernewsletter {
+        padding-top: 40px;
     }
     .btn {
         /* margin-top: 10px; */
@@ -236,7 +243,8 @@ footer {
 /* FOOTER */
 
     .footerp {
-        margin: 40px 150px;
+        margin: 0;
+        font-size: 95%;
     }
     
 }
