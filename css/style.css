@@ -227,13 +227,13 @@ footer {
         width: 68%;
     }
     .zipwidth {
-        width: 25%;
+        width: 16.5%;
         margin-bottom: 3rem;
     }
     .zipwidth:target,
     .zipwidth:focus {
     transition-timing-function: linear;
-    width: 23%
+    width: 18%
     }
     .topbordernewsletter {
         padding-top: 40px;
