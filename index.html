@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- If I wanna use fontawesome <script src="https://kit.fontawesome.com/f686b5e7e8.js" crossorigin="anonymous"></script>  -->
+<!-- If I wanna use fontawesome <script src="https://kit.fontawesome.com/f686b5e7e8.js" crossorigin="anonymous"></script>  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <title>Code form site</title>
     </head>
     <body>
@@ -56,6 +56,7 @@
 
                                         <label class="newsletterlabeltitle">Select the newsletter you would like to receive</label>
                                                 <div class="newslettercontent">
+<!-- Used checked instead of required since as far as I could investigate there is no required validation through html5 yet and I think it would not be fair to force the user to pick one of the 3 nwesletters news!-->
                                                         <input checked type="checkbox" id="htmlnews" value="news_html" name="user_newsletter_choice">
                                                         <label  for="htmlnews">HTML News</label>
                                                 </div>
